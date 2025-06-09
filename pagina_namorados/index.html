@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Minha Vida ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-hearts"></div>
+    
+    <div class="container">
+        <div class="letter-envelope" id="letterEnvelope">
+            <div class="letter-flap"></div>
+            <div class="letter-body">
+                <div class="letter-content" id="letterContent">
+                    <!-- Cabeçalho da carta -->
+                    <header class="letter-header">
+                        <h1 class="main-title">Para o Amor da Minha Vida</h1>
+                        <div class="heart-divider">💕</div>
+                        <p class="subtitle">Uma carta especial para você no Dia dos Namorados</p>
+                    </header>
+
+                    <!-- Seção de introdução -->
+                    <section class="intro-section">
+                        <p class="intro-text">
+                            Meu amor, preparei esta carta digital especial para celebrar nosso amor. 
+                            Cada seção contém memórias, fotos e palavras que vêm do meu coração.
+                        </p>
+                    </section>
+
+                    <!-- Seção de galeria de fotos -->
+                    <section class="photo-gallery-section">
+                        <h2 class="section-title">Nossas Memórias</h2>
+                        <div class="photo-gallery" id="photoGallery">
+                            <div class="photo-placeholder" onclick="addPhoto(this)">
+                                <span class="add-photo-icon">📷</span>
+                                <span class="add-photo-text">Clique para adicionar uma foto</span>
+                            </div>
+                            <div class="photo-placeholder" onclick="addPhoto(this)">
+                                <span class="add-photo-icon">📷</span>
+                                <span class="add-photo-text">Clique para adicionar uma foto</span>
+                            </div>
+                            <div class="photo-placeholder" onclick="addPhoto(this)">
+                                <span class="add-photo-icon">📷</span>
+                                <span class="add-photo-text">Clique para adicionar uma foto</span>
+                            </div>
+                            <div class="photo-placeholder" onclick="addPhoto(this)">
+                                <span class="add-photo-icon">📷</span>
+                                <span class="add-photo-text">Clique para adicionar uma foto</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção de mensagens personalizadas -->
+                    <section class="messages-section">
+                        <h2 class="section-title">Palavras do Coração</h2>
+                        <div class="message-card">
+                            <p class="message-text" contenteditable="true">
+                                Escreva aqui uma mensagem especial para sua amada...
+                            </p>
+                        </div>
+                        <div class="message-card">
+                            <p class="message-text" contenteditable="true">
+                                Adicione mais uma mensagem de amor...
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Seção de animações especiais -->
+                    <section class="animations-section">
+                        <h2 class="section-title">Momentos Mágicos</h2>
+                        <div class="animation-container">
+                            <div class="floating-hearts">
+                                <span class="heart">❤️</span>
+                                <span class="heart">💕</span>
+                                <span class="heart">💖</span>
+                                <span class="heart">💗</span>
+                                <span class="heart">💝</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Rodapé da carta -->
+                    <footer class="letter-footer">
+                        <p class="signature">Com todo meu amor,</p>
+                        <p class="name" contenteditable="true">[Seu nome aqui]</p>
+                        <div class="date">Dia dos Namorados 2025</div>
+                    </footer>
+                </div>
+            </div>
+            <div class="letter-open-trigger" onclick="toggleLetter()"></div>
+        </div>
+
+        <!-- Botão para fechar a carta -->
+        <div class="close-button" id="closeButton" onclick="toggleLetter()">
+            <span>✕</span>
+        </div>
+    </div>
+
+    <!-- Input oculto para upload de fotos -->
+    <input type="file" id="photoInput" accept="image/*" style="display: none;" onchange="handlePhotoUpload(event)">
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
